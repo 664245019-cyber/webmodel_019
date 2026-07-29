@@ -89,7 +89,7 @@ st.markdown(
             display: flex;
             flex-direction: column;
             border: 1px solid rgba(0,0,0,0.03);
-            margin-bottom: 20px;
+            
         }
         .card:hover {
             transform: translateY(-6px);
