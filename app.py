@@ -360,7 +360,7 @@ st.markdown(
     """
     <div class="footer">
         <strong>Machine Learning Web Portfolio</strong><br>
-        Developed by ชื่อผู้พัฒนา<br>
+        Developed by Khanisorn Chanthasoot 019<br>
         © 2026
     </div>
     """,
