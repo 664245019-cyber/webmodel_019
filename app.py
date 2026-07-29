@@ -278,7 +278,7 @@ st.markdown(
             <div class="profile-avatar">👨‍💻</div>
             <div class="profile-info">
                 <strong>ชื่อผู้พัฒนา</strong><br>
-                รหัสนักศึกษา: 123456789 &nbsp;|&nbsp; หมู่เรียน: 1<br>
+                รหัสนักศึกษา: 664245019 &nbsp;|&nbsp; หมู่เรียน: 66/43<br>
                 รายวิชา: Machine Learning
             </div>
         </div>
