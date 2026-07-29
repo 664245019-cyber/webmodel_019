@@ -269,11 +269,10 @@ with st.sidebar:
 st.markdown(
     """
     <div class="header-container">
-        <h1>🤖 Machine Learning Web Model Portfolio</h1>
+        <h1>Web Model</h1>
         <div class="header-divider"></div>
         <p class="subtitle">
-            This portfolio contains six Machine Learning web applications developed
-            using Python, Scikit-learn and Streamlit.
+            รวบรวมเว็บแอปพลิเคชันด้าน Machine Learning จำนวน 6 ผลงาน
         </p>
         <div class="profile-row">
             <div class="profile-avatar">👨‍💻</div>
