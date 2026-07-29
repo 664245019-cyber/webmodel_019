@@ -277,7 +277,7 @@ st.markdown(
         <div class="profile-row">
             <div class="profile-avatar">👨‍💻</div>
             <div class="profile-info">
-                <strong>ชื่อผู้พัฒนา</strong><br>
+                <strong>ชื่อผู้พัฒนา: นายคณิศร จันทรสูตร</strong><br>
                 รหัสนักศึกษา: 664245019 &nbsp;|&nbsp; หมู่เรียน: 66/43<br>
                 รายวิชา: Machine Learning
             </div>
