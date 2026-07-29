@@ -247,7 +247,7 @@ with st.sidebar:
     st.markdown("### 📊 Portfolio Progress")
     st.progress(1.0)
     st.markdown(
-        f"""
+        """
         <div style="text-align:center; font-size:0.85rem; color:#6b7280;">
             <strong>6</strong> / 6 Models
         </div>
@@ -331,7 +331,7 @@ models = [
         "icon": "🌲",
         "name": "Ensemble (Random Forest)",
         "desc": "Classification using Random Forest.",
-        "link": "#",
+        "link": "https://randomforest019-hkmfm94czhwer4z8dql5kz.streamlit.app/",
     },
 ]
 
