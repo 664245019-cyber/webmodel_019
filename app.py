@@ -213,6 +213,47 @@ st.markdown(
             color: white !important;
         }
 
+        /* ---------- Card Action Buttons (side by side) ---------- */
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 0.5rem;
+        }
+        .card-actions .card-btn-half {
+            flex: 1;
+            display: block;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            padding: 0.45rem 0.5rem;
+            font-weight: 600;
+            font-size: 0.82rem;
+            transition: all 0.25s ease;
+            text-decoration: none !important;
+            box-sizing: border-box;
+        }
+        .card-actions .card-btn-half.app-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            box-shadow: 0 4px 14px rgba(102, 126, 234, 0.25);
+        }
+        .card-actions .card-btn-half.app-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            color: white !important;
+        }
+        .card-actions .card-btn-half.gh-btn {
+            background: #2b3137;
+            color: white !important;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        }
+        .card-actions .card-btn-half.gh-btn:hover {
+            background: #1b1f23;
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            color: white !important;
+        }
+
         /* ---------- Responsive ---------- */
         @media (max-width: 768px) {
             .header-container h1 { font-size: 1.6rem; }
@@ -301,36 +342,42 @@ models = [
         "name": "K-Nearest Neighbor (KNN)",
         "desc": "Classification using KNN algorithm.",
         "link": "https://knnml2-019-69.streamlit.app/",
+        "github": "",
     },
     {
         "icon": "🌳",
         "name": "Decision Tree",
         "desc": "Classification using Decision Tree.",
         "link": "https://dtreeheartdeseat-6jh923zdgap4rvgzmd9mxd.streamlit.app/",
+        "github": "",
     },
     {
         "icon": "⚡",
         "name": "Support Vector Machine (SVM)",
         "desc": "Classification using SVM.",
         "link": "https://m2kpub5tweaxue8xzxzfxh.streamlit.app/",
+        "github": "",
     },
     {
         "icon": "🌀",
         "name": "K-Means Clustering",
         "desc": "Unsupervised clustering using K-Means.",
         "link": "https://k-mean-019-3sgxqvfnxlswvdsvwawaai.streamlit.app/",
+        "github": "",
     },
     {
         "icon": "📈",
         "name": "Regression",
         "desc": "Regression prediction model.",
         "link": "https://regression-usug3mbkxvbhpfrgivsasw.streamlit.app/",
+        "github": "",
     },
     {
         "icon": "🌲",
         "name": "Ensemble (Random Forest)",
         "desc": "Classification using Random Forest.",
         "link": "https://randomforest019-hkmfm94czhwer4z8dql5kz.streamlit.app/",
+        "github": "",
     },
 ]
 
@@ -354,9 +401,14 @@ for i in range(0, 6, 3):
                 )
                 st.markdown(
                     f"""
-                    <a href="{m['link']}" target="_blank" class="card-btn">
-                        🚀 Open Application
-                    </a>
+                    <div class="card-actions">
+                        <a href="{m['link']}" target="_blank" class="card-btn-half app-btn">
+                            🚀 Open Application
+                        </a>
+                        <a href="{m['github']}" target="_blank" class="card-btn-half gh-btn">
+                            💻 GitHub
+                        </a>
+                    </div>
                     """,
                     unsafe_allow_html=True,
                 )
