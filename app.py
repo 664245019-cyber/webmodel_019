@@ -112,22 +112,7 @@ st.markdown(
             flex: 1;
             margin: 0 0 1rem 0;
         }
-        .card .stButton > button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 0.45rem 1.4rem;
-            font-weight: 600;
-            font-size: 0.85rem;
-            width: 100%;
-            transition: all 0.25s ease;
-            box-shadow: 0 4px 14px rgba(102, 126, 234, 0.25);
-        }
-        .card .stButton > button:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-        }
+
 
         /* ---------- Footer ---------- */
         .footer {
@@ -202,6 +187,30 @@ st.markdown(
             color: #16a34a;
             font-weight: 600;
             margin: 0.2rem 0 0 0;
+        }
+
+        /* ---------- Card Link Button ---------- */
+        .card-btn {
+            display: block;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            border: none;
+            border-radius: 10px;
+            padding: 0.45rem 1.4rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            width: 100%;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 14px rgba(102, 126, 234, 0.25);
+            text-decoration: none !important;
+            box-sizing: border-box;
+            margin-top: 0.5rem;
+        }
+        .card-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            color: white !important;
         }
 
         /* ---------- Responsive ---------- */
@@ -345,15 +354,13 @@ for i in range(0, 6, 3):
                     unsafe_allow_html=True,
                 )
                 st.markdown(
-                    f'<a href="{m["link"]}" target="_blank" style="text-decoration:none;">',
+                    f"""
+                    <a href="{m['link']}" target="_blank" class="card-btn">
+                        🚀 Open Application
+                    </a>
+                    """,
                     unsafe_allow_html=True,
                 )
-                st.button(
-                    "🚀 Open Application",
-                    key=f"btn_{idx}",
-                    use_container_width=True,
-                )
-                st.markdown("</a>", unsafe_allow_html=True)
 
 # ------------------- Footer -------------------
 st.markdown(
